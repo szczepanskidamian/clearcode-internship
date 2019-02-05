@@ -53,7 +53,7 @@ def csv_report(input_csv, output_csv='output.csv'):
     output = sorted(output, key=operator.itemgetter(0, 1))
 
     """As we have sorted list already now we compare element i and i+1 to check 
-    if dates and country clearcode-internship matches and if they do, we sum their impressions and clicks on ad
+    if dates and country codes match and if they do, we sum their impressions and clicks on ad
     and we remove element i+1 from list decreasing output_len to prevent IndexOutOfRange error."""
     i = 0
     output_len = len(output)-1

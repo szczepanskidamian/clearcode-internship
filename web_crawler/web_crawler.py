@@ -44,6 +44,8 @@ def map_link(_url, homepage):
         links[i] = links[i].decode('utf-8')
         links[i] = re.sub('"', '', links[i])
 
+        """If links[i] is only a extension of full url we add 
+        an initial url (homepage) at the begining to make it work."""
         if "http" not in links[i]:
             links[i] = homepage + links[i]
 
